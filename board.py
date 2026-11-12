@@ -7,7 +7,7 @@ class Board:
         Initialize the game's board and the black and white player pieces.
         """
         self.size = size
-        self.board = [['.' for _ in range(size) for _ in range(size)]]
+        self.board = [['.' for _ in range(size)] for _ in range(size)]
 
         # Set up initial game pieces
         mid = size // 2
