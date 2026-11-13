@@ -9,5 +9,5 @@ The Adversarial Search assignment uses the board game Othello as an example. Oth
 This program acts as an AI program/bot that has the ability to play Othello against an human player.
 
 ### How to execute:
-Run this command to execute the code for `(type .py file name here)`:
-`(type python command here to run the game)`
+Run this command to execute the code for the Othello game:
+`python main.py`
