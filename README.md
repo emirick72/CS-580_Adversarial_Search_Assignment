@@ -9,5 +9,13 @@ The Adversarial Search assignment uses the board game Othello as an example. Oth
 This program acts as an AI program/bot that has the ability to play Othello against an human player.
 
 ### How to execute:
-Run this command to execute the code for the Othello game:
-`python main.py`
+* Clone this repo from GitHub using `git clone https://github.com/emirick72/CS-580_Adversarial_Search_Assignment.git`
+* `cd` into the game's repo on your machine (`cd CS-580_Adversarial_Search_Assignment`)
+* Run this command to execute the script for the Othello game: `python main.py`
+
+### How to play the game:
+* After running `python main.py`, the game loads in the terminal.
+* Human player is the black chips, AI player is the white.
+* The game will show you a list of valid moves you can make.
+    * If an invalid move is made, the game will warn you and you get to go again.
+* You enter your moves as `row col`, such as `2 3` with a space between both numbers.
