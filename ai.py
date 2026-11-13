@@ -73,7 +73,7 @@ class OthelloAIPlayer:
             temp_board.execute_move(move[0], move[1], player)
 
             opponent = 'W' if player == 'B' else 'B'
-            score = self.alpha_beta(temp_board, self.depth - 1, alpha, beta, False, player, opponent)
+            score = self.alpha_beta_pruning(temp_board, self.depth - 1, alpha, beta, False, player, opponent)
 
             if score > best_score:
                 best_score = score

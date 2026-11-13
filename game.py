@@ -21,7 +21,7 @@ class OthelloGame:
             self.board.display()
             valid_moves = self.board.get_valid_moves(self.current_player)
 
-            print(f"Current Player: {'Black (B)' if self.current_player == 'B' else 'White (W)'}")
+            #print(f"Current Player: {'Black (B)' if self.current_player == 'B' else 'White (W)'}")
 
             if not valid_moves:
                 print(f"No valid moves available for {self.current_player}. Your turn is skipped.\n")
@@ -30,7 +30,7 @@ class OthelloGame:
 
             # Human player's turn
             if self.current_player == 'B':
-                print(f"Your turn (Black chips). Valid moves: {valid_moves}")
+                print(f"Your turn (Black chips).\nValid moves: {valid_moves}")
 
                 try:
                     move_input = input("Enter move as 'row col' (e.g., 2 3): ")
@@ -46,7 +46,7 @@ class OthelloGame:
 
             # AI player's turn
             else:
-                print("AI (White chips) is thinking...")
+                print("AI's turn (White chips). Thinking...")
                 ai_move = self.ai.find_best_move(self.board, 'W')
                 if ai_move:
                     print(f"AI plays at: {ai_move}\n")
